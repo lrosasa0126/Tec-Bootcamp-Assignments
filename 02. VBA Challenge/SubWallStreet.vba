@@ -22,6 +22,7 @@ TotalStock = 0
             Range("I" & Counter + 1).Value = Ticker
             
             
+            
  'Get the yearly change
 
              OpenPeriod = Cells(i, 3).Value
@@ -52,7 +53,10 @@ TotalStock = 0
        
   Next i
   
-
+Cells(1, 9).Value = "Ticker"
+Cells(1, 10).Value = "Yearly Change"
+Cells(1, 11).Value = "Percent Change"
+Cells(1, 12).Value = "Total Stock Volume"
              
 End Sub
 
